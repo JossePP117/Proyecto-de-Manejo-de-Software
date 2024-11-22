@@ -1,0 +1,182 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cada sección ocupa toda la pantalla */
+.seccion {
+    height: 100vh; /* Altura completa de la pantalla */
+    display: flex; /* Flexbox para centrar contenido */
+    flex-direction: column;
+    justify-content: flex-start; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;
+    padding: 20px;
+    
+    
+}
+
+/* Fondo general para cada sección */
+#inicio {
+
+    .boton {
+        margin-top: 475px; /* Ajusta el valor según el diseño */
+    }
+
+    position: relative; /* Contenedor padre relativo */
+
+    height: 100vh;
+    background: url('IMAGEN.jpg')
+     no-repeat center center/cover; /* Imagen de fondo */
+    color: white;
+    /*Para el texto*/
+    
+}
+
+.contenedor{
+    text-align: center ;
+    color: rgba(235, 237, 103, 0.929); /* color del texto */
+    font-size: 3rem; /* Tamano grande para el texto */
+    background-color: rgba(0, 0, 0, 0.803);  /* fondo uscuro medio transparente */
+    padding: 50px 70px; /* relleno al rededor del texto */
+    border-radius: 10px; /* Bordes redodndos*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* sombra para rrsaltar el texto */
+    opacity: 0; /* Inicialmente invisible */
+    animation: fadeInContainer 4s forwards; /* Animación de desvanecimiento */
+}
+
+/* Animación de desvanecimiento para el contenedor */
+@keyframes fadeInContainer {
+    0% {
+        opacity: 0; /* Comienza invisible */
+    }
+    100% {
+        opacity: 1; /* Se hace visible */
+    }
+}
+
+
+
+/* Estilo del texto de descripción txt1*/
+.texto1 {
+    margin-top: 20px; /* Espacio entre el título y la descripción */
+    text-align: center; /* Centra el texto */
+    max-width: 700px; /* Ancho máximo del texto */
+    color: rgba(255, 255, 255, 0.9); /* Color blanco */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    line-height: 1.8; /* Espaciado entre líneas */
+    padding: 15px; /* Relleno interno */
+    background-color: rgb(0, 0, 0); /* Fondo oscuro semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-left: auto; /* Centra el bloque horizontalmente */
+    margin-right: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+    
+
+  /*MOver el cuadro de texto8*/
+    position: absolute; /* Coloca el cuadro dentro del contenedor */
+    top: 60%; /* Ajusta hacia abajo desde la parte superior */
+    left: 20%; /* Centra horizontalmente */
+    transform: translate(-58%, -140%); /* Centra exactamente en el medio */
+    width: 32%; /* El ancho será del 80% de la pantalla o del contenedor */
+    min-height: 150px; /* Altura mínima para el cuadro */
+    overflow: hidden; /* Evita que se vea una barra de desplazamiento */
+    resize: none; /* Desactiva la capacidad de redimensionar el cuadro, si no lo deseas */
+    padding: 10px; /* Agrega un poco de espacio interno */
+    opacity: 0; /* Inicialmente invisible */
+    animation: fadeInText 2s 2s forwards; /* Animación de desvanecimiento con retraso */
+}
+
+/* Animación de desvanecimiento para el texto-descripcion */
+@keyframes fadeInText {
+    0% {
+        opacity: 0; /* Comienza invisible */
+    }
+    100% {
+        opacity: 1; /* Se hace visible */
+    }
+}
+
+    
+
+
+/* Estilo del texto de descripción txt2 */
+.texto2 {
+    margin-top: 20px; /* Espacio entre el título y la descripción */
+    text-align: center; /* Centra el texto */
+    max-width: 700px; /* Ancho máximo del texto */
+    color: rgba(255, 255, 255, 0.9); /* Color blanco */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    line-height: 1.8; /* Espaciado entre líneas */
+    padding: 15px; /* Relleno interno */
+    background-color: rgb(0, 0, 0); /* Fondo oscuro semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-left: auto; /* Centra el bloque horizontalmente */
+    margin-right: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+    
+
+  /*MOver el cuadro de text2*/
+    position: absolute; /* Coloca el cuadro dentro del contenedor */
+    top: 60%; /* Ajusta hacia abajo desde la parte superior */
+    left: 20%; /* Centra horizontalmente */
+    transform: translate(146%, -140%); /* Centra exactamente en el medio */
+    width: 32%; /* El ancho será del 80% de la pantalla o del contenedor */
+    min-height: 150px; /* Altura mínima para el cuadro */
+    overflow: hidden; /* Evita que se vea una barra de desplazamiento */
+    resize: none; /* Desactiva la capacidad de redimensionar el cuadro, si no lo deseas */
+    padding: 10px; /* Agrega un poco de espacio interno */
+    opacity: 0; /* Inicialmente invisible */
+    animation: fadeInText 2s 2s forwards; /* Animación de desvanecimiento con retraso */
+}
+
+/* Animación de desvanecimiento para el texto-descripcion */
+@keyframes fadeInText {
+    0% {
+        opacity: 0; /* Comienza invisible */
+    }
+    100% {
+        opacity: 1; /* Se hace visible */
+    }
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+#peliculas {
+    background-color: #1c0ae0; /* Fondo azul */
+    color: black;
+}
+
+/* Estilo de los botones */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+/* Transición suave entre secciones */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+
+    .contenedor h1{
+        font-size: 2rem;
+    }
+}
